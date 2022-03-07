@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/CSSCustom.css" />
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script> 
+        $(function(){
+        $("#header").load("header.html"); 
+        $("#footer").load("footer.html"); 
+        });
+    </script>
+    <title>Custom Order</title>
+</head>
+<body>
+    <div id="header"></div>
+    <section class="content">
+        <div id="cake">
+            <article class="cake">
+                <h2> SELECT THE FLAVOR</h2>
+                <div class="description">
+                    <div class="radio">
+                        <input label="American $180" type="radio" id="fr1" name="flavor" value="1" checked>
+                        <input label="Apple $150" type="radio" id="fr2" name="flavor" value="2">
+                        <input label="Carrot $140" type="radio" id="fr3" name="flavor" value="3">
+                        <input label="Cheese 190" type="radio" id="fr4" name="flavor" value="4">
+                        <input label="German $180" type="radio" id="fr5" name="flavor" value="5">
+                        <input label="Mocha $190" type="radio" id="fr6" name="flavor" value="6">
+                    </div>
+                </div>
+            </article>
+            <article class="cake">
+                <h2> SELECT THE 1° FILLING</h2>
+                <div class="description">
+                    <div class="radio">
+                        <input label="Almonds $60" type="radio" id="fg11" name="filling1" value="1" checked>
+                        <input label="Blackberry $50" type="radio" id="fg12" name="filling1" value="2">
+                        <input label="Nutella $40" type="radio" id="fg13" name="filling1" value="3">
+                        <input label="Peach $50" type="radio" id="fg14" name="filling1" value="4">
+                        <input label="Philadelphia $60" type="radio" id="fg15" name="filling1" value="5">
+                        <input label="Strawberries $60" type="radio" id="fg16" name="filling1" value="6">
+                    </div>
+                    <h2> SELECT THE 2° FILLING</h2>
+                    <div class="radio">
+                        <input label="Almonds $60" type="radio" id="fg21" name="filling2" value="1" checked>
+                        <input label="Blackberry $50" type="radio" id="fg22" name="filling2" value="2">
+                        <input label="Nutella $40" type="radio" id="fg23" name="filling2" value="3">
+                        <input label="Peach $50" type="radio" id="fg24" name="filling2" value="4">
+                        <input label="Philadelphia $60" type="radio" id="fg25" name="filling2" value="5">
+                        <input label="Strawberries $60" type="radio" id="fg26" name="filling2" value="6">
+                    </div>
+                </div>
+            </article>
+            <article class="cake">
+                <h2> SELECT THE TOPPINGS</h2>
+                <div class="description">
+                    <div class="radio">
+                        <input label="Buttercream $60" type="checkbox" id="t1" name="topping" value="1" checked>
+                        <input label="Chantilly $50" type="checkbox" id="t2" name="topping" value="2">
+                        <input label="Ganache $40" type="checkbox" id="t3" name="topping" value="3">
+                        <input label="Merengue $50" type="checkbox" id="t4" name="topping" value="4">
+                        <input label="Fondant $60" type="checkbox" id="t5" name="topping" value="5">
+                    </div>
+            </article>
+        </div>
+        <a href="form.html" class="ready"> <i class="fa-solid fa-list-check"></i> &nbsp MY CAKE IS READY</a> 
+    </section>
+    <div id="footer"></div>
+</body>
+</html>

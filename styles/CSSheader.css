@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;    
+  }
+  nav{
+    min-width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+  }
+  #topMenu{
+    background: #1c1c1c;
+    height: 30px;
+    width: 100%;
+  }
+
+  #topMenu nav a{
+    position: relative;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    letter-spacing: 0.5 px;
+    margin: 5px;
+    cursor: default;
+  }
+  #topMenu nav i{
+      color: #ff3c78;
+  }
+
+  #logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  }
+  #imgLogo{    
+    width: 180px;
+    height: 100px;
+    padding-bottom: 0px;
+  }
+  #logo h1{
+      font-family: Cursive, Geneva, Tahoma, sans-serif;
+      font-size: 50px;
+      margin: 0px;
+  }
+
+  #mainMenu{
+    background: #1c1c1c;
+    height: 60px ;
+    width: 100%;
+  }
+  #mainMenu nav a{
+    position: relative;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 24px;
+    letter-spacing: 0.5 px;
+    margin: 15px;
+  }
+  #mainMenu nav a:after{
+    content: "";
+    position: absolute;
+    background-color: #ff3c78;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+  }
+  #mainMenu nav a:hover{
+    color: #ff3c78;
+  }
+  #mainMenu nav a:hover:after{
+    width: 100%;  
+  }

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/CSSBaker.css" />
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script> 
+        $(function(){
+        $("#header").load("header.html"); 
+        $("#footer").load("footer.html"); 
+        });
+    </script>
+    <title>Baker</title>
+</head>
+<body>
+    <div id="header"></div>
+    <div class="table" style="overflow-x:auto;">
+        <table border="1" id="table">
+            <caption id="tname">TO DO LIST</caption>
+            <thead>
+                <tr>
+                    <th>FLAVOR</th>
+                    <th>AMOUNT</th>  
+                    <th>FILLING</th>
+                    <th>AMOUNT</th>  
+                    <th>TOPPING</th>
+                    <th>AMOUNT</th>  
+                </tr>                    
+            </thead>
+            <tbody>
+                <tr>
+                    <td>American</td>
+                    <td>25</td>
+                    <td>Almonds</td>
+                    <td>10</td>
+                    <td>Buttercream</td>
+                    <td>4</td>
+                </tr>       
+                <tr>
+                    <td>Apple</td>
+                    <td>10</td>
+                    <td>Blackberry</td>
+                    <td>4</td>
+                    <td>Chantilly</td>
+                    <td>6</td>
+                </tr>     
+                <tr>
+                    <td>Carrot</td>
+                    <td>12</td>
+                    <td>Nutella</td>
+                    <td>15</td>
+                    <td>Ganache</td>
+                    <td>20</td>
+                </tr>   
+                <tr>
+                    <td>Cheese</td>
+                    <td>9</td>
+                    <td>Peach</td>
+                    <td>13</td>
+                    <td>Merengue</td>
+                    <td>22</td>
+                </tr>    
+                <tr>
+                    <td>German</td>
+                    <td>5</td>
+                    <td>Philadelphia</td>
+                    <td>2</td>
+                    <td>Fondant</td>
+                    <td>7</td>
+                </tr>   
+                <tr>
+                    <td>Mocha</td>
+                    <td>19</td>
+                    <td>Strawberries</td>
+                    <td>20</td>
+                </tr>   
+            </tbody>
+        </table>               
+    </div>
+    <div class="table" style="overflow-x:auto;">
+        <table border="1" id="table">
+            <caption id="tname">ORDER LIST</caption>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>F NAME</th>
+                    <th>L NAME</th>
+                    <th>TIME</th>
+                    <th>EMAIL</th>
+                    <th>CELLPHONE</th>
+                    <th>FLAVOR</th>
+                    <th>FILLING 1</th>
+                    <th>FILLING 2</th>
+                    <th>TOPPINGS</th>
+                </tr>                    
+            </thead>
+            <tbody>
+                <tr>
+                    <td>258</td>
+                    <td>PEDRO</td>
+                    <td>RAMIREZ</td>
+                    <td>10:00</td>
+                    <td>pedro@innovaccion.com</td>
+                    <td>7239548962</td>
+                    <td>American</td>
+                    <td>Blackberry</td>
+                    <td>Peach</td>
+                    <td>Ganache, Fondant</td>
+                </tr>         
+                <tr>
+                    <td>259</td>
+                    <td>JOSE</td>
+                    <td>LOPEZ</td>
+                    <td>11:00</td>
+                    <td>jose@innovaccion.com</td>
+                    <td>7896852145</td>
+                    <td>Carrot</td>
+                    <td>Peach</td>
+                    <td>Nutella</td>
+                    <td>Chantilly, Fondant, Ganache</td>
+                </tr>
+                <tr>
+                    <td>260</td>
+                    <td>JULIETA</td>
+                    <td>PEREZ</td>
+                    <td>11:10</td>
+                    <td>julieta@innovaccion.com</td>
+                    <td>8965254562</td>
+                    <td>Mocha</td>
+                    <td>Philadelphia</td>
+                    <td>Almonds</td>
+                    <td>Merengue, Chantilly, Fondant</td>
+                </tr> 
+                <tr>
+                    <td>261</td>
+                    <td>ANDREA</td>
+                    <td>JIMENEZ</td>
+                    <td>11:20</td>
+                    <td>andrea@innovaccion.com</td>
+                    <td>8965742365</td>
+                    <td>Strawberries</td>
+                    <td>Strawberries</td>
+                    <td>Nutella</td>
+                    <td>Fondant</td>
+                </tr>      
+            </tbody>
+        </table>               
+    </div>
+    <div id="footer"></div>
+</body>
+</html>

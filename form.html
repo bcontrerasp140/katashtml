@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/CSSform.css" />
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script> 
+        $(function(){
+        $("#header").load("header.html"); 
+        $("#footer").load("footer.html"); 
+        });
+    </script>
+    <title>Ready</title>
+</head>
+<body>
+    <div id="header"></div>
+    <form action="" class="form-contacto" method="POST" >
+        <p type="First Name:">
+            <input type="text" placeholder="White your First Name here.." name="fname" id="fname"></input>
+        </p>
+        <p type="Last Name:">
+            <input type="text" placeholder="White your Last Name here.." name="lname" id="lname"></input>
+        </p>
+        <p type="What time do you want your cake?">
+            <input type="time" name="time" id="time"></input>
+        </p>
+        <p type="Email:">
+            <input type="text" placeholder="Write your email here.." name="email" id="email"></input>
+        </p>
+        <p type="Cellphone:">
+            <input type="tel" placeholder="Write your cellphone here.." name="tel" id="tel"></input>
+        </p>
+        <p type="Message:">
+            <input type="text" placeholder="What would you like to tell us?" name="mensaje" id="mensaje"></input>
+        </p>
+        <p type="Order Resume" class="orderResume">
+            <ul>
+                <li>Flavor:
+                    <ul>
+                        <li>Flavor selected</li>
+                    </ul>
+                </li>
+                <li>Fillings:
+                    <ul>
+                        <li>1° filling</li>
+                        <li>2° filling</li>
+                    </ul>
+                </li>
+                <li>Toppings:
+                    <ul>
+                        <li>1° topping</li>
+                        <li>2° topping</li>
+                        <li>3° topping</li>
+                        <li>4° topping</li>
+                    </ul>
+                </li>
+                <br>
+                <li>Total: $XXXX</li>
+              </ul>
+              
+        </p>          
+        <button type="button" id="btnEnviar">SEND</button>
+        <div>
+            <span class="fa fa-phone"></span>+52 722 9041373
+            <span class="fas fa-envelope"></span> cpbryan95@gmail.com
+        </div>
+        </form>
+    <div id="footer"></div>
+</body>
+</html>
